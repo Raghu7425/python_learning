@@ -109,3 +109,21 @@ print("left strip: ",s)
 
 s=new_txt.rstrip()
 print("right strip: ",s)
+
+#padding and alignment
+new_txt = "banana"
+s=new_txt.center(20)
+print("centre: ",s)
+
+s=new_txt.rjust(20)
+print("rjustify: ",s)
+
+s=new_txt.ljust(20)
+print("left justify",s)
+
+s=new_txt.zfill(10)
+print("zfill: ",s)
+
+s=new_txt.expandtabs(2)
+print("expandtabs:",s)
+
