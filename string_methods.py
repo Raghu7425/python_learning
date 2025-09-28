@@ -45,6 +45,7 @@ s = txt.isspace()
 print("isspace: ",s)
 
 s = txt.isascii()
+print(txt)
 print("isascii: ",s)
 
 #numeric type checks
@@ -58,7 +59,7 @@ print("isdecimal: ",s)
 s=txt.isnumeric()
 print("numeric: ",s)
 
-#case checks
+#case/structure checks
 
 s= txt.islower()
 print("islower: ",s)
@@ -71,3 +72,40 @@ print("isidentifier: ",s)
 
 s=txt.isprintable()
 print("isprintable: ",s)
+
+#positional findings
+new_txt="     Raghu, Hi iam Raghunandan vaddi     "
+
+s=new_txt.find("Raghu")
+print("find: ",s)
+
+s=new_txt.index("Raghu")
+print("index: ",s)
+
+#positional reverse findings 
+
+s = new_txt.rfind("Raghu")
+print("rfind: ",s)
+
+s=new_txt.rindex("Raghu")
+print("rindex: ",s)
+
+#boundary findings
+s=new_txt.startswith("Raghu")
+print("startswidth: ",s)
+
+s=new_txt.endswith("vaddi")
+print("endswith: ",s)
+
+s=new_txt.count("Raghu")
+print("count: ",s)
+
+#trimming and cleaning
+s=new_txt.strip()
+print("strip: ",s)
+
+s=new_txt.lstrip()
+print("left strip: ",s)
+
+s=new_txt.rstrip()
+print("right strip: ",s)
