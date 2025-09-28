@@ -127,3 +127,29 @@ print("zfill: ",s)
 s=new_txt.expandtabs(2)
 print("expandtabs:",s)
 
+#splitting and joining
+s = new_txt.split()
+print("split: ",s)
+
+s=new_txt.rsplit()
+print("rsplit: ",s)
+
+s=new_txt.splitlines()
+print("split lines: ",s)
+
+mylist = ("a","b","c")
+x="#".join(mylist)
+print("join: ",x)
+
+
+new_txt="     Raghu, Hi iam Raghunandan vaddi     "
+
+x=new_txt.partition("hi")
+print("partition: ",x)
+
+x=new_txt.rpartition("Raghu")
+print("rpartition: ",x)
+
+#replacement and translation
+
+
