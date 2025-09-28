@@ -153,3 +153,11 @@ print("rpartition: ",x)
 #replacement and translation
 
 
+x=new_txt.replace("Raghu","Ram")
+print("replace :",x)
+
+x=new_txt.maketrans("vaddi","VADDI")
+print(new_txt.translate(x))
+
+x=new_txt.encode()
+print("Encode: ",x)
